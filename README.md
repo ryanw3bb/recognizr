@@ -4,6 +4,7 @@ Quadrilateral recognition on iOS devices using the OpenCV C++ Library. Uses pers
 
 ![img](http://ryanwebb.com/images/recognizrr.jpg)
 
+
 ## Setup
 First make sure you have CocoaPods installed then add OpenCV to your Podfile:
 ```
@@ -24,5 +25,6 @@ pod install
 * Find contours
 * Construct quads from contours using minimum angle threshold
 
-Dog image from Unsplash.
+
+Dog image from Unsplash.  
 https://unsplash.com/photos/pgUbpDLJh3E
