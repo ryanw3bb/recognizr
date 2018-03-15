@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		871018331A841928000CEDBD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8710181F1A841928000CEDBD /* AppDelegate.m */; };
+		871018341A841928000CEDBD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 871018201A841928000CEDBD /* LaunchScreen.xib */; };
+		8710183D1A841928000CEDBD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8710182E1A841928000CEDBD /* main.m */; };
+		942649C91F3286C2002FCAA0 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 942649C81F3286C2002FCAA0 /* opencv2.framework */; };
+		9431DCAB1FC0E3870097911A /* SquareDetector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9431DCAA1FC0E3870097911A /* SquareDetector.mm */; };
+		9448EE35205430180077F6A1 /* dog-marker.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9448EE34205430180077F6A1 /* dog-marker.jpg */; };
+		945B0C5C1FC0DC44001BCAC9 /* MainViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 945B0C5B1FC0DC44001BCAC9 /* MainViewController.mm */; };
+		949B57B820553CD000B91762 /* CVImageTools.mm in Sources */ = {isa = PBXBuildFile; fileRef = 949B57B720553CD000B91762 /* CVImageTools.mm */; };
+		94E769C8203B6E3F003C0177 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 871018221A841928000CEDBD /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		12663B3780CEAE791332DF29 /* Recognizr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Recognizr.release.xcconfig; path = "Pods/Target Support Files/Pods-opencv-facerec/Recognizr.release.xcconfig"; sourceTree = "<group>"; };
+		1FC962100DA597184CD7C607 /* Recognizr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Recognizr.debug.xcconfig; path = "Pods/Target Support Files/Pods-opencv-facerec/Recognizr.debug.xcconfig"; sourceTree = "<group>"; };
+		8710181E1A841928000CEDBD /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8710181F1A841928000CEDBD /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		871018211A841928000CEDBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		871018231A841928000CEDBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8710182D1A841928000CEDBD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8710182E1A841928000CEDBD /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		872C48E71A69251A001BD610 /* Recognizr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recognizr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		942649C81F3286C2002FCAA0 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = Pods/OpenCV/opencv2.framework; sourceTree = "<group>"; };
+		9431DCAA1FC0E3870097911A /* SquareDetector.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SquareDetector.mm; sourceTree = "<group>"; };
+		9431DCAC1FC0E4820097911A /* SquareDetector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SquareDetector.h; sourceTree = "<group>"; };
+		943A6B6D205AA99D003B1DB1 /* CVImageTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVImageTools.h; sourceTree = "<group>"; };
+		9448EE34205430180077F6A1 /* dog-marker.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "dog-marker.jpg"; path = "Images.xcassets/dog-marker.jpg"; sourceTree = "<group>"; };
+		945B0C5B1FC0DC44001BCAC9 /* MainViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MainViewController.mm; sourceTree = "<group>"; };
+		945B0C5D1FC0DC78001BCAC9 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		949B57B720553CD000B91762 /* CVImageTools.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CVImageTools.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		872C48E41A69251A001BD610 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				942649C91F3286C2002FCAA0 /* opencv2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F605C3787B88D87FFC40E53 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1FC962100DA597184CD7C607 /* Recognizr.debug.xcconfig */,
+				12663B3780CEAE791332DF29 /* Recognizr.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7EE4BE23B198D93A0B305085 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				942649C81F3286C2002FCAA0 /* opencv2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8710181D1A841928000CEDBD /* Recognizr */ = {
+			isa = PBXGroup;
+			children = (
+				8710181E1A841928000CEDBD /* AppDelegate.h */,
+				8710181F1A841928000CEDBD /* AppDelegate.m */,
+				871018411A8419C1000CEDBD /* Recognizr */,
+				871018421A8419D0000CEDBD /* View Controllers */,
+				871018401A841936000CEDBD /* Supporting Files */,
+				8710182E1A841928000CEDBD /* main.m */,
+			);
+			path = Recognizr;
+			sourceTree = "<group>";
+		};
+		871018401A841936000CEDBD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9448EE34205430180077F6A1 /* dog-marker.jpg */,
+				871018201A841928000CEDBD /* LaunchScreen.xib */,
+				8710182D1A841928000CEDBD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		871018411A8419C1000CEDBD /* Recognizr */ = {
+			isa = PBXGroup;
+			children = (
+				943A6B6D205AA99D003B1DB1 /* CVImageTools.h */,
+				949B57B720553CD000B91762 /* CVImageTools.mm */,
+				9431DCAC1FC0E4820097911A /* SquareDetector.h */,
+				9431DCAA1FC0E3870097911A /* SquareDetector.mm */,
+			);
+			name = Recognizr;
+			sourceTree = "<group>";
+		};
+		871018421A8419D0000CEDBD /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				871018221A841928000CEDBD /* Main.storyboard */,
+				945B0C5D1FC0DC78001BCAC9 /* MainViewController.h */,
+				945B0C5B1FC0DC44001BCAC9 /* MainViewController.mm */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		872C48DE1A69251A001BD610 = {
+			isa = PBXGroup;
+			children = (
+				8710181D1A841928000CEDBD /* Recognizr */,
+				872C48E81A69251A001BD610 /* Products */,
+				5F605C3787B88D87FFC40E53 /* Pods */,
+				7EE4BE23B198D93A0B305085 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		872C48E81A69251A001BD610 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				872C48E71A69251A001BD610 /* Recognizr.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		872C48E61A69251A001BD610 /* Recognizr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 872C490A1A69251A001BD610 /* Build configuration list for PBXNativeTarget "Recognizr" */;
+			buildPhases = (
+				2335F04D007DFF5EED99D7C9 /* [CP] Check Pods Manifest.lock */,
+				872C48E31A69251A001BD610 /* Sources */,
+				872C48E41A69251A001BD610 /* Frameworks */,
+				872C48E51A69251A001BD610 /* Resources */,
+				6DEAC8F413D85F25EA25F34C /* [CP] Embed Pods Frameworks */,
+				B57F9B6A3B948A7AA71EFBAD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Recognizr;
+			productName = opencvtest;
+			productReference = 872C48E71A69251A001BD610 /* Recognizr.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		872C48DF1A69251A001BD610 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = "";
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Ryan Webb";
+				TargetAttributes = {
+					872C48E61A69251A001BD610 = {
+						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 3PGZ96AS42;
+					};
+				};
+			};
+			buildConfigurationList = 872C48E21A69251A001BD610 /* Build configuration list for PBXProject "Recognizr" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 872C48DE1A69251A001BD610;
+			productRefGroup = 872C48E81A69251A001BD610 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				872C48E61A69251A001BD610 /* Recognizr */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		872C48E51A69251A001BD610 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9448EE35205430180077F6A1 /* dog-marker.jpg in Resources */,
+				871018341A841928000CEDBD /* LaunchScreen.xib in Resources */,
+				94E769C8203B6E3F003C0177 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2335F04D007DFF5EED99D7C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-opencv-facerec-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6DEAC8F413D85F25EA25F34C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-opencv-facerec/Pods-opencv-facerec-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B57F9B6A3B948A7AA71EFBAD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-opencv-facerec/Pods-opencv-facerec-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		872C48E31A69251A001BD610 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8710183D1A841928000CEDBD /* main.m in Sources */,
+				945B0C5C1FC0DC44001BCAC9 /* MainViewController.mm in Sources */,
+				9431DCAB1FC0E3870097911A /* SquareDetector.mm in Sources */,
+				949B57B820553CD000B91762 /* CVImageTools.mm in Sources */,
+				871018331A841928000CEDBD /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		871018201A841928000CEDBD /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				871018211A841928000CEDBD /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		871018221A841928000CEDBD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				871018231A841928000CEDBD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		872C49081A69251A001BD610 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		872C49091A69251A001BD610 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		872C490B1A69251A001BD610 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FC962100DA597184CD7C607 /* Recognizr.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3PGZ96AS42;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/OpenCV",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Recognizr/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryanwebb.Recognizr;
+				PRODUCT_NAME = Recognizr;
+			};
+			name = Debug;
+		};
+		872C490C1A69251A001BD610 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12663B3780CEAE791332DF29 /* Recognizr.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3PGZ96AS42;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/OpenCV",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Recognizr/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryanwebb.Recognizr;
+				PRODUCT_NAME = Recognizr;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		872C48E21A69251A001BD610 /* Build configuration list for PBXProject "Recognizr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				872C49081A69251A001BD610 /* Debug */,
+				872C49091A69251A001BD610 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		872C490A1A69251A001BD610 /* Build configuration list for PBXNativeTarget "Recognizr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				872C490B1A69251A001BD610 /* Debug */,
+				872C490C1A69251A001BD610 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 872C48DF1A69251A001BD610 /* Project object */;
+}
