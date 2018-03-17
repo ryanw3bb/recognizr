@@ -1,6 +1,6 @@
 # Recognizr
 
-![img](https://ryanwebb.com/images/recognizrr.jpg)
+![img](https://ryanwebb.com/images/recognizr.jpg)
 
 Quadrilateral recognition on iOS devices using the OpenCV C++ Library. Uses perspective warping to map an image to the detected shape. Main code found in /Recognizr/SquareDetector.mm should you want to adapt/use it for your project.
 
